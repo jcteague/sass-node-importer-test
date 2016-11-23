@@ -1,6 +1,6 @@
 @import "../colors.json";
 
-@debug $colors;
+//@debug $colors;
 
 $all-colors: (
   'red': map-get($colors, red),
@@ -22,10 +22,10 @@ $all-colors: (
 .black-text {
   color:map-get($colors,'black')
 }
-@debug $all-colors;
+//@debug $all-colors;
 //generate color classes
 @each $color-name, $color in $all-colors {
-  @debug #{$color};
+  //@debug #{$color};
   $keys: map-keys($color);
   $base-index: index($keys,'base');
   @each $color_type, $color-value in $color {

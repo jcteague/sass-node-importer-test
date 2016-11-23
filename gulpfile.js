@@ -35,7 +35,7 @@ const config = {
     sass: {
       indentedSyntax: true,
       //running two
-      importer: [jsonImporter, moduleImporter()],
+      importer: [jsonImporter],
       sourcemap: true
     },
     autoprefixer:{
