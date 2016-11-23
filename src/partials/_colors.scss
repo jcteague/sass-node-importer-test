@@ -1,0 +1,73 @@
+@import "../colors.json";
+
+@debug $colors;
+
+$all-colors: (
+  'red': map-get($colors, red),
+  'orange': map-get($colors, orange),
+  'yellow': map-get($colors, yellow),
+  'green': map-get($colors, green),
+  'teal': map-get($colors, teal),
+  'aqua': map-get($colors, aqua),
+  'blue': map-get($colors, blue),
+  'purple': map-get($colors, purple),
+  'magenta': map-get($colors, magenta),
+  'gray': map-get($colors, gray)
+
+);
+
+.black {
+  background-color: map-get($colors,'black');
+}
+.black-text {
+  color:map-get($colors,'black')
+}
+@debug $all-colors;
+//generate color classes
+@each $color-name, $color in $all-colors {
+  @debug #{$color};
+  $keys: map-keys($color);
+  $base-index: index($keys,'base');
+  @each $color_type, $color-value in $color {
+    $idx: index($keys,$color_type);
+    @if $color-type == "base" {
+      .#{$color-name} {
+        background-color: $color-value;
+      }
+      .#{$color-name}-text{
+        color: $color-value;
+      }
+    }
+    @else {
+      $prefix: 'light';
+      @if $idx > $base-index {
+        $prefix: 'dark';
+      }
+      $color-index: abs($idx - $base-index);
+      .#{$color-name}-#{$prefix}-#{$color-index}{
+        background-color: $color-value;
+      }
+      .#{$color-name}-#{$prefix}-#{$color-index}-text{
+        color: $color-value;
+      }
+
+    }
+  }
+}
+@function color($color, $type:'base') {
+  @if $color == 'black' {
+    @return $black;
+  }
+  @if $color == 'macmillan-red' {
+    @return $macmillan-red;
+  }
+
+  @if map-has-key($all-colors, $color) {
+    $curr_color: map-get($all-colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}

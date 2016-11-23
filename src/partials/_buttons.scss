@@ -1,0 +1,44 @@
+@import '_variables';
+@mixin btn-common() {
+  font-size: rem($ui-text-size);
+  font-family: $font-family;
+  height: rem($base-button-size);
+  padding: 0 rem(15px);
+  border-radius: rem(3px);
+  border: 0px;
+  cursor: pointer;
+}
+
+.btn-cdl-main {
+  @include btn-common();
+  background-color: color("aqua", "dark_1");
+  color: #FFFFFF;
+}
+
+.btn-cdl-main:hover:enabled {
+  opacity: 0.8;
+  box-shadow: 0 rem(1px) rem(6px) rgba(0, 0, 0, 1);
+}
+
+.btn-cdl-main:disabled {
+  background-color: color("gray", "light_1");
+  cursor: default;
+}
+
+.btn-cdl-secondary {
+  @include btn-common();
+  background-color: transparent;
+  color: color("aqua", "dark_1");
+  border: rem(1px) solid color("aqua", "dark_1");
+}
+
+.btn-cdl-secondary:hover:enabled {
+  opacity: 0.8;
+  box-shadow: 0 rem(1px) rem(6px) rgba(0, 0, 0, 1);
+}
+
+.btn-cdl-secondary:disabled {
+  border: rem(1px) solid color("gray", "light_1");
+  color: color("gray", "light_1");
+  cursor: default;
+}

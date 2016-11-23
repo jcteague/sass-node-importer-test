@@ -1,0 +1,54 @@
+{
+  "name": "sass-importer-test",
+  "version": "0.5.0",
+  "description": "demo of issue with sass importers",
+  "main": "lib/style.css",
+  "style": "lib/style.css",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register tests/js/**",
+    "gulp": "gulp",
+    "build": "npm run gulp"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jcteague/sass-node-importer-test.git"
+  },
+  "author": "John Teague",
+  "license": "MIT",
+  "homepage": "https://github.com/jcteague/sass-node-importer-test",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "node-sass-json-importer": "^2.1.1",
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "path": "^0.12.7",
+    "sass-module-importer": "^1.2.1",
+    "node-sass": "^3.11.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.3.1",
+    "gulp-sourcemaps": "^2.2.0"
+  },
+  "peerDependencies": {
+    "sass-rems": "https://github.com/jcteague/sass-rems"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "sass-font-face": "^1.0.1",
+    "sass-rems": "https://github.com/jcteague/sass-rems"
+  },
+  "publishConfig": {
+    "registry": "http://npm.macmillantech.com/"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "colors": {
+    "black": "#080808",
+    "red": {
+      "light_2": "#fce4e2",
+      "light_1": "#ffafaf",
+      "base": "#ef5656",
+      "dark_1": "#da1b2c",
+      "dark_2": "#a51426"
+    },
+    "orange": {
+      "light_2": "#ffe5d3",
+      "light_1": "#ffc196",
+      "base": "#ff8a57",
+      "dark_1": "#dd5714",
+      "dark_2": "#a83d0e"
+    },
+    "yellow": {
+      "light_2": "#fffbd7",
+      "light_1": "#faf2a9",
+      "base": "#e5d676",
+      "dark_1": "#b79e25",
+      "dark_2": "#74600c"
+    },
+    "green": {
+      "light_2": "#daf4d4",
+      "light_1": "#acdba2",
+      "base": "#68b75f",
+      "dark_1": "#3b822e",
+      "dark_2": "#2c5e20"
+    },
+    "teal": {
+      "light_2": "#dbfff3",
+      "light_1": "#aee5d3",
+      "base": "#5fb79c",
+      "dark_1": "#218466",
+      "dark_2": "#16664b"
+    },
+    "aqua": {
+      "light_2": "#cff3f9",
+      "light_1": "#a2d6dd",
+      "base": "#45a5b5",
+      "dark_1": "#00758e",
+      "dark_2": "#205460"
+    },
+    "blue": {
+      "light_2": "#e0f1ff",
+      "light_1": "#b0daff",
+      "base": "#3192d3",
+      "dark_1": "#006eb8",
+      "dark_2": "#004c72"
+    },
+    "purple": {
+      "light_2": "#ffe6fd",
+      "light_1": "#e5c6e3",
+      "base": "#b286af",
+      "dark_1": "#865f7f",
+      "dark_2": "#543b50"
+    },
+    "magenta": {
+      "light_2": "#ffe6f3",
+      "light_1": "#edb0ce",
+      "base": "#b26487",
+      "dark_1": "#882345",
+      "dark_2": "#562135"
+    },
+    "gray": {
+      "light_3": "#f8f8f8",
+      "light_2": "#f3f3f3",
+      "light_1": "#dddddd",
+      "base": "#c8c8c8",
+      "dark_1": "#989898",
+      "dark_2": "#686868",
+      "dark_3": "#383838"
+    }
+  }
+}
